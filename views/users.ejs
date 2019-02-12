@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+	<head></head>
+	<body>
+		<a href="/">Home</a>
+		<a href="/users">Users</a>		
+		<ul>
+			<% users.forEach( function( user ) { %>
+			<li><a href="/users/<%= user.id %>"><%= user.name %></a></li>
+			<% }); %>
+		</ul>
+	</body>
+</html>
